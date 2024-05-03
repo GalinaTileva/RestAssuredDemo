@@ -37,7 +37,7 @@ public class ValidatableResponse {
     Map<String, String> expectedHeaders = Map.of("content-encoding", "gzip",
             "access-control-allow-origin", "*");
 
-    @Test //
+    @Test
     void usingMapsToTestHeaders() {
         RestAssured.get(BASE_URL)
                 .then()
