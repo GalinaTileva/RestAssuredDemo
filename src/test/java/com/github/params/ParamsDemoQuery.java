@@ -8,7 +8,8 @@ public class ParamsDemoQuery {
 
     @Test
     void withoutParam() {
-        RestAssured.get(BASE_URL + "?q=java&per_page=1")
+        RestAssured
+                .get(BASE_URL + "?q=java&per_page=1")
                 .prettyPeek()
                 .then()
                 .statusCode(200);

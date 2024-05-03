@@ -48,10 +48,6 @@ public class ValidatableResponse {
                 )
                 .headers(expectedHeaders);
     }
-
-
-
-
-
+    
 
 }

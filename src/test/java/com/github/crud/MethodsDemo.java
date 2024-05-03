@@ -15,11 +15,11 @@ public class MethodsDemo {
              //   .header("Authorization", "token " + TOKEN)
                 .auth()
                 .oauth2(TOKEN)
-                .body("{\"name\": \"deleteme\"}")
+                .body("{\"name\" : \"deleteme\"}")
                 .when()
                 .post(REPO_EP)
                 .then()
-                .statusCode(200);
+                .statusCode(201);
     }
 
     @Test(description = "Update repo")
@@ -43,7 +43,7 @@ public class MethodsDemo {
                 .when()
                 .delete("https://api.github.com/repos/dermenji/deleteme-patched1")
                 .then()
-                .statusCode(200);
+                .statusCode(204);
     }
 
 
