@@ -4,7 +4,7 @@ import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 
 public class JsonCrud {
-    static final String BASE_URL = "https://jsonplaceholder.typicode.com/";
+    static final String BASE_URL = "https://jsonplaceholder.typicode.com";
 
     @Test
     void getComment() {
@@ -14,7 +14,6 @@ public class JsonCrud {
                 .statusCode(200);
     }
 
-    // и тук не знам какъв трябва да е статус кода, през Postman е ок
     @Test
     void getCommentId() {
         RestAssured
